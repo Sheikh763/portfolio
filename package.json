@@ -12,6 +12,14 @@
     "predeploy": "npm run build && npm run export",
     "deploy": "gh-pages -d out"
   },
+  
+  "scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d out"
+},
   "dependencies": {
     "framer-motion": "^12.11.0",
     "lucide-react": "^0.510.0",
