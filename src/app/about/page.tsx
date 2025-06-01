@@ -12,8 +12,6 @@ import {
 
 import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { SiMongodb, SiMysql, SiJavascript } from 'react-icons/si';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { MdOutlineWork } from 'react-icons/md';
 
 const About = () => {
   return (

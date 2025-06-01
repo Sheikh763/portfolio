@@ -115,7 +115,13 @@ const data = {
   ]
 };
 
-const SectionTitle = ({ children }) => (
+import React, { ReactNode } from "react";
+
+interface SectionTitleProps {
+  children: ReactNode;
+}
+
+const SectionTitle = ({ children }: SectionTitleProps) => (
   <motion.h2 
     variants={animations.fadeInUp}
     className="text-3xl md:text-4xl font-bold mb-6 text-center bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent"
@@ -124,7 +130,11 @@ const SectionTitle = ({ children }) => (
   </motion.h2>
 );
 
-const SectionSubtitle = ({ children }) => (
+interface SectionSubtitleProps {
+  children: ReactNode;
+}
+
+const SectionSubtitle = ({ children }: SectionSubtitleProps) => (
   <motion.p 
     variants={animations.fadeInUp}
     className="text-lg md:text-xl text-center mb-12 max-w-3xl mx-auto text-gray-300"
@@ -133,7 +143,12 @@ const SectionSubtitle = ({ children }) => (
   </motion.p>
 );
 
-const PrimaryButton = ({ href, children }) => (
+interface PrimaryButtonProps {
+  href: string;
+  children: ReactNode;
+}
+
+const PrimaryButton = ({ href, children }: PrimaryButtonProps) => (
   <Link href={href}>
     <motion.button
       whileHover={{ scale: 1.05 }}
@@ -144,6 +159,7 @@ const PrimaryButton = ({ href, children }) => (
     </motion.button>
   </Link>
 );
+
 
 export default function Home() {
   return (

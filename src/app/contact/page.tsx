@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
 
 const Contact = () => {
@@ -49,7 +48,7 @@ const Contact = () => {
                 <label htmlFor="message" className="block text-gray-300 mb-2">Your Message</label>
                 <textarea 
                   id="message" 
-                  rows="5"
+                  rows={5}
                   className="w-full px-4 py-3 bg-[#1c1a1a] border border-gray-700 rounded-lg focus:border-yellow-400 focus:outline-none transition-colors"
                   placeholder="Tell me about your project..."
                 ></textarea>
