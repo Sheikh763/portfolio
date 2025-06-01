@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // if you have this for static export
+  output: 'export',        // enables static export
   images: {
-    unoptimized: true, // disables image optimization
+    unoptimized: true,     // disables image optimization (needed for static export)
   },
 }
 
