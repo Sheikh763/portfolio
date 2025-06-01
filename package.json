@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "https://sheikh763.github.io/portfolio",
   "scripts": {
-<<<<<<< HEAD
     "dev": "next dev --turbopack",
     "build": "NEXT_DISABLE_ESLINT=true next build",
     "start": "next start",
@@ -15,8 +14,6 @@
   },
   
   "scripts": {
-=======
->>>>>>> 4710f3d (Update: Made changes to portfolio site)
   "dev": "next dev",
   "build": "NEXT_DISABLE_ESLINT=true next build",
   "predeploy": "npm run build",
