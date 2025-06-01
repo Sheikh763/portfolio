@@ -4,18 +4,10 @@
   "private": true,
   "homepage": "https://sheikh763.github.io/portfolio",
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "NEXT_DISABLE_ESLINT=true next build",
-    "start": "next start",
-    "lint": "next lint",
-    "export": "next export",
-    "predeploy": "npm run build && npm run export",
-    "deploy": "gh-pages -d out"
-  },
-  
-  "scripts": {
-  "dev": "next dev",
-  "build": "NEXT_DISABLE_ESLINT=true next build",
+  "dev": "next dev --turbopack",
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint",
   "predeploy": "npm run build",
   "deploy": "gh-pages -d out"
 },
@@ -40,5 +32,4 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   }
-  
 }
